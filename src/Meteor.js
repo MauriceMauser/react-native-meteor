@@ -1,6 +1,6 @@
 import { Platform, View } from 'react-native';
 
-import NetInfo from '@react-native-community/netinfo
+import NetInfo from '@react-native-community/netinfo';
 import reactMixin from 'react-mixin';
 import Trackr from 'trackr';
 import EJSON from 'ejson';
