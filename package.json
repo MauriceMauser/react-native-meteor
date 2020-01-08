@@ -5,7 +5,8 @@
   "main": "src/Meteor.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require test/setup --recursive",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "postinstall": "./node_modules/minimongo-cache && npm install && npm audit fix"
   },
   "lint-staged": {
     "*.{js,json,md}": [
