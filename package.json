@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require test/setup --recursive",
     "precommit": "lint-staged",
-    "postinstall": "./node_modules/minimongo-cache && npm install && npm audit fix"
+    "postinstall": "cd ./node_modules/minimongo-cache && npm install && npm audit fix && npm run prepublish"
   },
   "lint-staged": {
     "*.{js,json,md}": [
